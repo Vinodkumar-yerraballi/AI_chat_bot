@@ -37,5 +37,5 @@ if st.button("Generate Response"):
     with st.spinner("Generating response..."):
         response = model_generate(user_input)
         st.write(response)
-if len(user_input) == 0:
-    st.warning("Please enter some text to generate a response.")
+    if len(user_input) == 0:
+        st.warning("Please enter some text to generate a response.")
